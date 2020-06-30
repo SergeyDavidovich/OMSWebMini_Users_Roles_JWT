@@ -95,6 +95,7 @@ namespace OMSWebMini
             app.UseRouting();
 
             app.UseAuthorization();
+            app.UseAuthentication();
 
             // Register the Swagger generator and the Swagger UI middlewares
             app.UseOpenApi();
