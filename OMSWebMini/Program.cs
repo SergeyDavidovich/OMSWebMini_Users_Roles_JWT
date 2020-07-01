@@ -9,6 +9,8 @@ using Microsoft.Extensions.Logging;
 
 //https://www.c-sharpcorner.com/article/authentication-and-authorization-in-asp-net-core-web-api-with-json-web-tokens/
 
+//https://andrey.moveax.ru/post/asp-net-core-web-api-authentication-part-1-jwt
+
 namespace OMSWebMini
 {
     public class Program

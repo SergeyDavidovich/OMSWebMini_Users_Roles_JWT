@@ -8,9 +8,11 @@ using Microsoft.EntityFrameworkCore;
 using OMSWebMini.Model;
 using OMSWebMini.Data;
 using System.Collections;
+using Microsoft.AspNetCore.Authorization;
 
 namespace OMSWebService.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class ProductsController : ControllerBase
