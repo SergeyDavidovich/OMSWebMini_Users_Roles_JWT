@@ -9,9 +9,12 @@ using OMSWebMini.Model;
 using OMSWebMini.Data;
 using System.Collections;
 using NSwag.Generation.Processors;
+using Microsoft.AspNetCore.Authorization;
+using OMSWebMini.Authentication;
 
 namespace OMSWebService.Controllers
 {
+    [Authorize(Roles = UserRoles.Admin)]
     [Route("api/[controller]")]
     [ApiController]
     public class OrdersController : ControllerBase
